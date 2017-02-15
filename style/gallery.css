@@ -2,9 +2,7 @@
     display: none;
 }
 .slideField{
-
     transition: 2s ease-in-out;
-
 }
 #containerGallery{
     display: flex;
@@ -15,8 +13,12 @@
     align-content: center;
     width: 100%;
     background: #FFFFFF;
+    padding-bottom:80px;
 }
-
+#containerGallery h1 {
+  font-family:'LeagueSpartan';
+  margin-top:50px;
+}
 #firstRow{
     display: flex;
     flex-direction: row;
@@ -24,7 +26,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    width:100%;
 }
 #secondRow{
     display: flex;
@@ -33,7 +34,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    width:100%;
 }
 #thirdRow{
     display: flex;
@@ -42,7 +42,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    width:100%;
 }
 #fourthRow{
     display: flex;
@@ -51,14 +50,8 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    width:100%;
 }
 .pictures{
     margin: 2% 0 0 2%;
 
-}
-h1{
-    position: relative;
-    width: 100%;
-    font-size: 50px;
 }
