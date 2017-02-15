@@ -23,6 +23,7 @@
   bottom:-220px;
 
   left:50%;
+  -webkit-transform:translateX(-50%);
   transform:translateX(-50%);
 
   cursor:pointer;
@@ -36,27 +37,32 @@
   }
   40% {
     bottom:-40px;
+    -webkit-transform:scale(0.3);
     transform:scale(0.3);
     transform-origin:0;
   }
   60% {
     bottom:20px;
+    -webkit-transform:scale(0.25);
     transform:scale(0.25);
     transform-origin:0;
   }
   80% {
     bottom:-20px;
+    -webkit-transform:scale(0.22);
     transform:scale(0.22);
     transform-origin:0;
   }
   90% {
     bottom:5px;
+    -webkit-transform:scale(0.20);
     transform:scale(0.20);
     transform-origin:0;
   }
   100% {
     bottom:-15px;
     left:140px;
+    -webkit-transform:scale(0.20);
     transform:scale(0.20);
     transform-origin:0;
   }
