@@ -16,7 +16,7 @@ body {
   background:black;
   text-align:center;
 
-  overflow:hidden;
+
 }
 header {
   position:absolute;
@@ -30,6 +30,7 @@ main {
   position:relative;
   width:1280px;
   height:100%;
+  margin-bottom: 15%;
 }
 main #players-container {
   position:absolute;

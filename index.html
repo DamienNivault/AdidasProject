@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="scripts/foot-game.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/scriptGallery.js"></script>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/foot.css">
+    <link rel="stylesheet" href="style/gallery.css">
     <title>Adidas : Show your skills</title>
-  </head>
-  <body>
-    <header>
-      <img id="logo" src="images/adidas-logo.png" alt="logo">
-    </header>
-    <main>
-      <div id="players-container">
+</head>
+<body>
+<header>
+    <img id="logo" src="images/adidas-logo.png" alt="logo">
+</header>
+<main>
+    <div id="players-container">
         <div class="left">
-          <span>Basketball</span>
-          <img src="images/battum.png" alt="battum">
+            <span>Basketball</span>
+            <img src="images/battum.png" alt="battum">
         </div>
         <div class="right">
-          <span>Football</span>
-          <img src="images/pogba.png" alt="battum">
+            <span>Football</span>
+            <img src="images/pogba.png" alt="battum">
         </div>
-      </div>
+    </div>
 
-      <div class="foot-container">
+    <div class="foot-container">
         <div id="field">
-          <div id="goal">
-            <div id="ball"></div>
-          </div>
+            <div id="goal">
+                <div id="ball"></div>
+            </div>
         </div>
-      </div>
-    </main>
-  </body>
+    </div>
+</main>
+<div id="containerGallery">
+    <div id="firstRow">
+
+        <img src="./images/imgWebsite/imgTest.png" class="pictures">
+    </div>
+    <div id="secondRow">
+
+        <img src="./images/imgWebsite/footChoose.png" class="pictures">
+
+        <img src="./images/imgWebsite/cageTarget.png" class="pictures">
+
+        <img src="./images/imgWebsite/looseSoocer.png" id="footLoose" class="pictures front">
+        <img src="./images/imgWebsite/winSoccer.png" id="footWin" class="pictures back hide">
+    </div>
+    <div id="thirdRow">
+
+        <img src="./images/imgWebsite/basketChoose.png" class="pictures">
+
+        <img src="./images/imgWebsite/basket.png" class="pictures">
+
+        <img src="./images/imgWebsite/looseBasket.png" id="basketLoose" class="pictures front">
+        <img src="./images/imgWebsite/winBasket.png" id="basketWin" class="pictures back hide">
+    </div>
+    <div id="fourthRow">
+
+        <img src="./images/imgWebsite/battumSignature.png" class="pictures">
+
+        <img src="./images/imgWebsite/pogbaSignature.png" class="pictures">
+
+    </div>
+</div>
+</body>
 </html>

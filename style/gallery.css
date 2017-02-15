@@ -1,0 +1,64 @@
+.hide{
+    display: none;
+}
+.slideField{
+
+    transition: 2s ease-in-out;
+
+}
+#containerGallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+#firstRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+}
+#secondRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+}
+#thirdRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+}
+#fourthRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+}
+.pictures{
+    margin: 2% 0 0 2%;
+
+}
+h1{
+    position: relative;
+    width: 100%;
+    font-size: 50px;
+}
