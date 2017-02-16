@@ -1,18 +1,19 @@
-.foot-container #field {
+.foot-container .field {
   max-width:600px;
   height:auto;
 
   margin:auto;
 }
-.foot-container #field #goal {
+.foot-container .field .goal {
   position:relative;
   width:100%;
-  height:200px;
+  height:250px;
 
   background:url('../images/foot/goal.png') no-repeat;
   background-size:100%;
+  background-position: bottom;
 }
-.foot-container #field #goal #ball {
+.foot-container .field .goal .ball {
   width:120px;
   height:120px;
 
