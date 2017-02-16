@@ -164,7 +164,10 @@ main #players-container {
 #gallery img {
   max-width:100%;
 
-  border:15px solid rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+
   padding:5px;
   vertical-align: top;
 }
@@ -184,6 +187,58 @@ main #players-container {
 }
 #gallery #gif{
   width: 80%;
+}
+.win {
+  visibility:hidden;
+  opacity:0;
+  transition:0.3s;
+
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:999;
+}
+.win div {
+  position:absolute;
+  top:50%;
+  left:50%;
+
+  color:white;
+  font-size:42px;
+  font-family:'LeagueSpartan';
+  transform:translate(-50%, -50%) scale(0);
+}
+@keyframes shake-win {
+  0% {
+    transform:translate(-50%, -50%) rotate(0deg);
+  }
+  20% {
+    transform:translate(-50%, -50%) rotate(12deg);
+  }
+  40% {
+    transform:translate(-50%, -50%) rotate(-12deg);
+  }
+  60% {
+    transform:translate(-50%, -50%) rotate(12deg) scale(5);
+  }
+  80% {
+    transform:translate(-50%, -50%) rotate(-12deg);
+  }
+  100% {
+    transform:translate(-50%, -50%) rotate(12deg) scale(0.1);
+  }
+}
+.shake-win {
+  animation:shake-win 1.5s;
+}
+.win-appear {
+  transition:0.3s;
+  visibility:visible;
+  opacity:1;
 }
 @media screen and (max-width:1280px){
   #gallery table tr td {

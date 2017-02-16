@@ -3,19 +3,38 @@ $(document).ready(function(){
 
   $(".foot-container .ball").click(function(){
     $(".foot-container .ball").toggleClass("ball-shoot");
-    kickSound.play();
+    setTimeout(function(){
+      $(".win").addClass("win-appear");
+      $(".win div").addClass("shake-win");
+    },2000);
 
     setTimeout(function(){
       $(".foot-container .ball").removeClass(".foot-container ball-shoot");
-    },6000);
+      $(".win").css("transition","0.3s").css("opacity","0").css("visibility","hidden");
+      $(".win div").removeClass("shake-win");
+    },4000);
+    setTimeout(function(){
+      $(".win").removeClass("win-appear");
+      $(".win").attr("style","");
+    },4500);
   });
 
   $(".basket-container .ball").click(function(){
     $(".basket-container .ball").toggleClass("ball-shoot-basket");
-    kickSound.play();
 
     setTimeout(function(){
-      $(".basket-container .ball").removeClass(".basket-container ball-shoot-basket");
-    },6000);
+      $(".win").addClass("win-appear");
+      $(".win div").addClass("shake-win");
+    },2000);
+
+    setTimeout(function(){
+      $(".basket-container .ball").removeClass("ball-shoot-basket");
+      $(".win").css("transition","0.3s").css("opacity","0").css("visibility","hidden");
+      $(".win div").removeClass("shake-win");
+    },4000);
+    setTimeout(function(){
+      $(".win").removeClass("win-appear");
+      $(".win").attr("style","");
+    },4500);
   });
 });

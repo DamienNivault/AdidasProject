@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $(".right").click(function(){
     $(".left").addClass("fade-left");
     $(".right").addClass("fade-right");
