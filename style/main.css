@@ -41,23 +41,34 @@ main #players-container {
 
   width:100%;
   height:auto;
-  -webkit-transform:translateX(-50px);
-  transform:translateX(-50px);
+  /*-webkit-transform:translateX(-50px);
+  transform:translateX(-50px);*/
+  margin:auto;
 }
 #players-container .left, #players-container .right {
+  position:relative;
   display:inline-block;
   max-width:45%;
-  height:400px;
+  height:auto;
   vertical-align:bottom;
   margin:auto;
 }
 #players-container .left img {
-  width:425px;
+  /*width:425px;*/
+  max-width:521px;
+  width:100%;
+  height:auto;
   filter:grayscale(100%);
   transition:0.3s;
+
+  position:relative;
+  top:16px;
 }
 #players-container .right img {
-  width:370px;
+  /*width:370px;*/
+  max-width:521px;
+  width:100%;
+  height:auto;
   filter:grayscale(100%);
   transition:0.3s;
 }
@@ -72,23 +83,23 @@ main #players-container {
   transition:0.5s;
 }
 #players-container .left span, #players-container .right span {
-  position:relative;
+  position:absolute;
   display:block;
   color:white;
   font-family:'LeagueSpartan';
   font-size:19px;
   opacity:0.3;
-  bottom:20px;
+  top:-50px;
+  left:50%;
+  transform:translateX(-50%);
 }
 #players-container .left span {
-  position:relative;
-  left:50px;
+  left:60%;
 }
 #players-container .right span {
-  position:relative;
-  left:10px;
+  left:52%;
 }
-.foot-container {
+.foot-container, .basket-container {
   position:relative;
   top:150px;
   visibility:hidden;
@@ -108,4 +119,34 @@ main #players-container {
   -webkit-transform:translateX(500px);
   transform:translateX(500px);
   opacity:0;
+}
+#gallery {
+  text-align: center;
+  background: #FFFFFF;
+  padding-bottom:80px;
+  border:1px solid white;
+}
+#gallery h1 {
+  font-family:'LeagueSpartan';
+  margin-top:50px;
+}
+#gallery table {
+  max-width:1280px;
+  margin:auto;
+}
+#gallery tr {
+  border:1px solid green;
+}
+#gallery tr td {
+  padding:5px;
+}
+#gallery img {
+  border:15px solid rgba(0,0,0,0.1);
+  padding:5px;
+  vertical-align: top;
+}
+@media screen and (max-width:1280px){
+  #gallery table tr td {
+    display:block;
+  }
 }

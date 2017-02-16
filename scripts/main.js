@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".left, .right").click(function(){
+  $(".right").click(function(){
     $(".left").addClass("fade-left");
     $(".right").addClass("fade-right");
 
@@ -10,6 +10,23 @@ $(document).ready(function(){
 
     setTimeout(function(){
       $(".foot-container").
+      css("transition","1s").
+      css("transform","scale(1)").
+      css("opacity","1");
+    },1000);
+  });
+
+  $(".left").click(function(){
+    $(".left").addClass("fade-left");
+    $(".right").addClass("fade-right");
+
+    $(".basket-container").
+    css("transition","0.5s").
+    css("visibility","visible").
+    css("opacity","0.2");
+
+    setTimeout(function(){
+      $(".basket-container").
       css("transition","1s").
       css("transform","scale(1)").
       css("opacity","1");
