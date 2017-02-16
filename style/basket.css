@@ -1,8 +1,14 @@
 .basket-container .basket {
   max-width:220px;
   width:100%;
-  width:100%;
   height:auto;
+}
+.basket-container .basket2 {
+  max-width:220px;
+  width:100%;
+  position:absolute;
+  left:190px;
+  z-index:10;
 }
 .basket-container .ball {
   position:absolute;
@@ -14,6 +20,7 @@
   transform:translateX(-50%);
 
   cursor:pointer;
+  z-index:11;
 }
 @keyframes ball-shoot-basket {
   0% {
@@ -21,11 +28,19 @@
   }
   50% {
     bottom:150px;
+    transform-origin:0;
+  }
+  80% {
+    z-index:9;
+    bottom:-250px;
+    -webkit-transform:scale(0.35);
+    transform:scale(0.35) translateX(-90px);
+    transform-origin:0;
   }
   100% {
-    bottom:-150px;
+    z-index:9
     -webkit-transform:scale(0.35);
-    transform:scale(0.35);
+    transform:scale(0.35) translateX(-90px);
     transform-origin:0;
   }
 }

@@ -59,8 +59,6 @@ main #players-container {
 
   width:100%;
   height:auto;
-  /*-webkit-transform:translateX(-50px);
-  transform:translateX(-50px);*/
   margin:auto;
 }
 #players-container .left, #players-container .right {
@@ -211,6 +209,27 @@ main #players-container {
   font-size:42px;
   font-family:'LeagueSpartan';
   transform:translate(-50%, -50%) scale(0);
+}
+.arrow {
+  position:absolute;
+  left:0;
+  top:0px;
+
+  width:24px;
+
+  cursor:pointer;
+  opacity:0.3;
+  transition:0.3s;
+}
+.arrow:hover {
+  opacity:1;
+  transform:translateX(-10px);
+}
+.return{
+  transition:0.7s;
+  -webkit-transform:translateX(0);
+  transform:translateX(0);
+  opacity:1;
 }
 @keyframes shake-win {
   0% {
