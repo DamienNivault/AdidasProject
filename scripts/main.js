@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $(".foot-container").
     css("transition","0.5s").
-    css("visibility","visible").
+    css("display","block").
     css("opacity","0.2");
 
     setTimeout(function(){
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     $(".basket-container").
     css("transition","0.5s").
-    css("visibility","visible").
+    css("display","block").
     css("opacity","0.2");
 
     setTimeout(function(){

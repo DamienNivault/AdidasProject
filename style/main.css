@@ -119,8 +119,10 @@ main #players-container {
 }
 .foot-container, .basket-container {
   position:relative;
+  max-width:600px;
+  margin:auto;
   top:200px;
-  visibility:hidden;
+  display:none;
   opacity:0;
   -webkit-transform:scale(0.9);
   transform:scale(0.9);
