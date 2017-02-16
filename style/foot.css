@@ -11,7 +11,7 @@
 
   background:url('../images/foot/goal.png') no-repeat;
   background-size:100%;
-  background-position: bottom;
+  background-position: top;
 }
 .foot-container .field .goal .ball {
   width:120px;
