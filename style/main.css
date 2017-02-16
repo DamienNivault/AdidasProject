@@ -17,6 +17,7 @@ body {
   text-align:center;
   overflow-x: hidden;
   cursor:default;
+  background:black;
 }
 header {
   position:absolute;
@@ -150,31 +151,22 @@ main #players-container {
   padding:5px;
   vertical-align: top;
 }
+#situation div {
+  width:60%;
+  margin:auto;
+  margin-bottom:10px;
+}
+#situation div img {
+  width:100%;
+}
+#containerGif{
+  width:100%;
+}
+#gif{
+  width: 80%;
+}
 @media screen and (max-width:1280px){
   #gallery table tr td {
     display:block;
   }
-}
-#gif{
-  width: 80%;
-  border-radius: 3%;
-}
-#tablet{
-  margin-bottom: 10%;
-}
-
-#containerGif{
-  width:100%;
-}
-#situation1{
-  width:60%;
-  margin-bottom: 3%;
-}
-#situation2{
-  margin-bottom: 3%;
-  width: 60%;
-}
-#situation3{
-  margin-bottom: 3%;
-  width: 60%;
 }
