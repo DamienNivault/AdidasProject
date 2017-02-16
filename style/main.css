@@ -1,6 +1,10 @@
 @font-face {
   src:url('../fonts/LeagueSpartan.otf');
   font-family:'LeagueSpartan';
+ }
+@font-face{
+  src:url('../fonts/GlacialIndifference-Regular.otf');
+  font-family:'SecondaryFont'
 }
 * {
   box-sizing:border-box;
@@ -102,7 +106,7 @@ main #players-container {
   position:absolute;
   display:block;
   color:white;
-  font-family:'LeagueSpartan';
+  font-family:'LeagueSpartan',serif;
   font-size:19px;
   opacity:0.3;
   top:-50px;
@@ -146,7 +150,7 @@ main #players-container {
   z-index:5;
 }
 #gallery h1 {
-  font-family:'LeagueSpartan';
+  font-family:'LeagueSpartan',serif;
   margin-top:50px;
 }
 #gallery table {
@@ -173,19 +177,18 @@ main #players-container {
   margin:5px;
 }
 #gallery #situation div {
-  width:60%;
+  width:100%;
   margin:auto;
   margin-bottom:10px;
 }
-#gallery #situation div img {
-  width:100%;
-}
+
 #gallery #situation #tablet {
   border:none;
 }
 #gallery #gif{
   width: 80%;
 }
+
 .win {
   visibility:hidden;
   opacity:0;
@@ -207,16 +210,14 @@ main #players-container {
 
   color:white;
   font-size:42px;
-  font-family:'LeagueSpartan';
+  font-family:'LeagueSpartan',serif;
   transform:translate(-50%, -50%) scale(0);
 }
 .arrow {
   position:absolute;
   left:0;
-  top:0px;
-
+  top:0;
   width:24px;
-
   cursor:pointer;
   opacity:0.3;
   transition:0.3s;
@@ -231,28 +232,31 @@ main #players-container {
   transform:translateX(0);
   opacity:1;
 }
-.imgHeader{
+#imgHeader{
   width: 100%;
   margin:0;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0;
+  -webkit-box-shadow: 2px 3px 30px 2px white;
+  -moz-box-shadow: 2px 3px 30px 2px white;
+  box-shadow: 2px 3px 30px 2px white;
 }
 .arrow{
   margin-right: 40%;
   width: 1%;
 }
-#paragraphe1{
-  width: 40%;
-  margin: 0 30% 5%;
-}
-#paragraphe2{
-  width: 40%;
-  margin: 15% 3%;
-}
-#imgSituation1{
-  width: 75%;
 
+#imgSituation1{
+  width: 60%;
+  margin-left: -30%;
+}
+#imgSituation2{
+  margin: 5% -10%;
+  width: 60%;
+
+}
+section{
+  font-size: 180%;
+  text-align : center;
+  font-family: 'SecondaryFont',serif;
 }
 #firstSituation{
   margin-bottom: 5%;
@@ -260,8 +264,17 @@ main #players-container {
 .align{
   display: inline-block;
 }
+#lastParagraphe{
+  width: 50%;
+}
 footer>img{
   width: 100%;
+}
+#imgSituation2{
+  margin-left: 0;
+}
+#lastParagraphe{
+  margin: 5% 5%;
 }
 @keyframes shake-win {
   0% {
@@ -291,8 +304,8 @@ footer>img{
   visibility:visible;
   opacity:1;
 }
-@media screen and (max-width:1280px){
+@media screen and (max-width:1280px) {
   #gallery table tr td {
-    display:block;
+    display: block;
   }
 }
