@@ -231,6 +231,38 @@ main #players-container {
   transform:translateX(0);
   opacity:1;
 }
+.imgHeader{
+  width: 100%;
+  margin:0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  box-shadow: 0;
+}
+.arrow{
+  margin-right: 40%;
+  width: 1%;
+}
+#paragraphe1{
+  width: 40%;
+  margin: 0 30% 5%;
+}
+#paragraphe2{
+  width: 40%;
+  margin: 15% 3%;
+}
+#imgSituation1{
+  width: 75%;
+
+}
+#firstSituation{
+  margin-bottom: 5%;
+}
+.align{
+  display: inline-block;
+}
+footer>img{
+  width: 100%;
+}
 @keyframes shake-win {
   0% {
     transform:translate(-50%, -50%) rotate(0deg);
