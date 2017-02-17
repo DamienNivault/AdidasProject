@@ -111,6 +111,7 @@ main #players-container {
   opacity:0.3;
   top:-50px;
   left:50%;
+  -webkit-transform:translateX(-50%);
   transform:translateX(-50%);
 }
 #players-container .left span {
@@ -291,21 +292,27 @@ footer>img {
 /* Animations */
 @keyframes shake-win {
   0% {
+    -webkit-transform:translate(-50%, -50%) rotate(0deg);
     transform:translate(-50%, -50%) rotate(0deg);
   }
   20% {
+    -webkit-transform:translate(-50%, -50%) rotate(12deg);
     transform:translate(-50%, -50%) rotate(12deg);
   }
   40% {
+    -webkit-transform:translate(-50%, -50%) rotate(-12deg);
     transform:translate(-50%, -50%) rotate(-12deg);
   }
   60% {
+    -webkit-transform:translate(-50%, -50%) rotate(12deg) scale(5);
     transform:translate(-50%, -50%) rotate(12deg) scale(5);
   }
   80% {
+    -webkit-transform:translate(-50%, -50%) rotate(-12deg);
     transform:translate(-50%, -50%) rotate(-12deg);
   }
   100% {
+    -webkit-transform:translate(-50%, -50%) rotate(12deg) scale(0.1);
     transform:translate(-50%, -50%) rotate(12deg) scale(0.1);
   }
 }
@@ -334,6 +341,7 @@ footer>img {
   color:white;
   font-size:42px;
   font-family:'LeagueSpartan',serif;
+  -webkit-transform:translate(-50%, -50%) scale(0);
   transform:translate(-50%, -50%) scale(0);
 }
 .win-appear {
@@ -397,6 +405,12 @@ footer>img {
 	background: rgba(255,0,0,0.4);
 }
 @media screen and (max-width:1280px) {
+  #situation .ball-blur {
+    display:none;
+  }
+  #situation .ball-basket-blur {
+    display:none;
+  }
   #gallery table tr td {
     display: block;
   }

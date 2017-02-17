@@ -18,6 +18,7 @@ $(document).ready(function(){
       $(".foot-container").
       css("transition","1s").
       css("transform","scale(1)").
+      css("-webkit-transform","scale(1)").
       css("opacity","1");
     },1000);
   });
@@ -37,6 +38,7 @@ $(document).ready(function(){
     setTimeout(function(){
       $(".basket-container").
       css("transition","1s").
+      css("-webkit-transform","scale(1)").
       css("transform","scale(1)").
       css("opacity","1");
     },1000);
@@ -50,6 +52,7 @@ $(document).ready(function(){
     setTimeout(function(){
       $(".foot-container, .basket-container").
       css("transition","1s").
+      css("-webkit-transform","scale(0)").
       css("transform","scale(0)").
       css("opacity","0");
     },1000);
