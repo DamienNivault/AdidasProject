@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   $(".right").click(function(){
     $(".left").removeClass('return');
     $(".right").removeClass('return');
@@ -60,4 +61,6 @@ $(document).ready(function(){
       $(".foot-container, .basket-container").css("display","none");
     }, 500);
   });
+
+  var rellax = new Rellax('.rellax');
 });

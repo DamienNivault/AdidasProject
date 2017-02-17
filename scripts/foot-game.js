@@ -6,13 +6,13 @@ $(document).ready(function(){
     setTimeout(function(){
       $(".win").addClass("win-appear");
       $(".win div").addClass("shake-win");
-    },2000);
+    },1000);
 
     setTimeout(function(){
       $(".foot-container .ball").removeClass(".foot-container ball-shoot");
       $(".win").css("transition","0.3s").css("opacity","0").css("visibility","hidden");
       $(".win div").removeClass("shake-win");
-    },4000);
+    },3000);
     setTimeout(function(){
       $(".win").removeClass("win-appear");
       $(".win").attr("style","");

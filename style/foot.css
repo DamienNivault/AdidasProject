@@ -19,8 +19,20 @@
   0% {
     transform-origin:0;
   }
+  50% {
+    bottom:50px;
+  }
+  100% {
+    transform:scale(0.3);
+    bottom:35px;
+  }
+}
+/*@keyframes ball-shoot {
+  0% {
+    transform-origin:0;
+  }
   20% {
-    bottom:40px;
+    bottom:60px;
   }
   40% {
     bottom:-40px;
@@ -29,13 +41,13 @@
     transform-origin:0;
   }
   60% {
-    bottom:20px;
+    bottom:50px;
     -webkit-transform:scale(0.25);
     transform:scale(0.25);
     transform-origin:0;
   }
   80% {
-    bottom:-20px;
+    bottom:-40px;
     -webkit-transform:scale(0.22);
     transform:scale(0.22);
     transform-origin:0;
@@ -47,14 +59,14 @@
     transform-origin:0;
   }
   100% {
-    bottom:-15px;
+    bottom:35px;
     left:140px;
     -webkit-transform:scale(0.20);
     transform:scale(0.20);
     transform-origin:0;
   }
-}
+}*/
 .ball-shoot {
-  animation:ball-shoot 1.5s forwards;
+  animation:ball-shoot 0.7s forwards;
   animation-delay:0.22s;
 }

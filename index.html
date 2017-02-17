@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="scripts/foot-game.js"></script>
+  <script type="text/javascript" src="scripts/rellax.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
 
   <link rel="stylesheet" href="style/main.css">
@@ -19,6 +20,7 @@
     <img id="header-text" src="images/header-text.png" alt="headerimg">
   </header>
   <main>
+
     <div id="players-container">
       <div class="left">
         <span>Basketball</span>
@@ -32,38 +34,35 @@
 
     <div class="foot-container">
       <img class="arrow" src="images/arrow.png">
-        <img class="goal" src="images/foot/goal.png" alt="goal">
-        <img class="ball" src="images/foot/ball.png" alt="ball">
+      <img class="goal" src="images/foot/goal.png" alt="goal">
+      <img class="ball" src="images/foot/ball.png" alt="ball">
     </div>
+
     <div class="win"><div>Goal !</div></div>
 
     <div class="basket-container">
       <img class="arrow" src="images/arrow.png">
-        <img class="basket" src="images/basket/basket.png" alt="basket">
-        <img class="ball" src="images/basket/ball.png" alt="ball">
+      <img class="basket" src="images/basket/basket.png" alt="basket">
+      <img class="ball" src="images/basket/ball.png" alt="ball">
     </div>
   </main>
 
+  <!-- Mise en situation -->
   <div id="gallery">
-
-
-
-    <h1>Mise en situation</h1>
-
     <section id="situation">
-      <p id="paragraphe1">Le nom du concept, en rapport avec le sport et la créativité.
-        L’utilisateurs devra faire part de ses talents d’où le choix de ce nom de projet.</p>
-      <div id="firstSituation">
-        <img  id="imgSituation1" src="images/imgWebsite/situation1.png">
+      <h1>Mise en situation - Bornes intéractives à Beaugrenelle</h1>
 
+      <div id="firstSituation">
+        <img id="imgSituation1" src="images/imgWebsite/situation1.png">
       </div>
       <div>
         <img src="images/imgWebsite/situation3.png" id="imgSituation2">
-
       </div>
-
+      <img class="ball-blur rellax" data-rellax-speed="-2" src="images/transition/ball-blur.png">
+      <img class="ball-basket-blur rellax" data-rellax-speed="4" src="images/transition/basket.png">
     </section>
-    <img id="imgHeader" src="images/imgWebsite/imgHeaderImpossible.png">
+
+    <h1>Une application mobile</h1>
     <table>
       <tr>
         <td colspan="3"><img src="./images/imgWebsite/imgTest.png" class="pictures"></td>
@@ -81,11 +80,35 @@
     </table>
     <img src="./images/imgWebsite/battumSignature.png">
     <img src="./images/imgWebsite/pogbaSignature.png">
-    <div>
-      <img src="images/imgWebsite/tablet.png" id="tablet">
-    </div>
+    <br>
     <div>
       <img src="images/imgWebsite/gifgif.gif" id="gif">
+    </div>
+
+    <div id="postSocial">
+      <h1> Réseaux sociaux</h1>
+
+      <div>
+        <img id="facebook" src="images/imgWebsite/imgFacebook.png">
+      </div>
+      <div>
+        <img id="twitter" src="images/imgWebsite/imgTwitter.png">
+      </div>
+      <div>
+        <img id="instagram" src="images/imgWebsite/imgInsta.png">
+      </div>
+    </div>
+
+    <h1>Stratégie marketing</h1>
+
+    <div id="stratMarket">
+
+      <div>
+        <img id="market1" src="images/imgWebsite/marketImg1.png">
+      </div>
+      <div>
+        <img id="market2" src="images/imgWebsite/marketImg2.png">
+      </div>
     </div>
   </div>
   <footer>

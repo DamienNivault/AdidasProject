@@ -129,19 +129,6 @@ main #players-container {
   -webkit-transform:scale(0.9);
   transform:scale(0.9);
 }
-/* Animations */
-.fade-left {
-  transition:0.7s;
-  -webkit-transform:translateX(-500px);
-  transform:translateX(-500px);
-  opacity:0;
-}
-.fade-right {
-  transition:0.7s;
-  -webkit-transform:translateX(500px);
-  transform:translateX(500px);
-  opacity:0;
-}
 #gallery {
   text-align: center;
   padding-bottom:80px;
@@ -151,7 +138,8 @@ main #players-container {
 }
 #gallery h1 {
   font-family:'LeagueSpartan',serif;
-  margin-top:50px;
+  margin-top:5%;
+  margin-bottom:5%;
 }
 #gallery table {
   max-width:1280px;
@@ -176,19 +164,154 @@ main #players-container {
 #gallery>img {
   margin:5px;
 }
+#gallery #situation {
+  position:relative;
+}
 #gallery #situation div {
   width:100%;
   margin:auto;
   margin-bottom:10px;
 }
-
 #gallery #situation #tablet {
   border:none;
 }
 #gallery #gif{
   width: 80%;
 }
+#situation .ball-blur {
+  position:absolute;
+  width:390px;
 
+  right:230px;
+  top:80px;
+
+  box-shadow:none !important;
+  border:none !important;
+  z-index:4;
+}
+#situation .ball-basket-blur {
+  position:absolute;
+  width:190px;
+
+  right:80px;
+  bottom:300px;
+
+  box-shadow:none !important;
+  border:none !important;
+
+  z-index:3;
+}
+#imgSituation1{
+  width: 60%;
+  margin-left: -30%;
+}
+#imgSituation2{
+  margin: 5% -10%;
+  width: 60%;
+}
+#firstSituation{
+  margin-bottom: 5%;
+}
+.align{
+  display: inline-block;
+}
+#lastParagraphe{
+  width: 50%;
+}
+footer>img {
+  width: 100%;
+}
+#imgSituation2{
+  margin-left: 0;
+}
+#lastParagraphe{
+  margin: 5% 5%;
+}
+#postSocial{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+   font-family: 'SecondaryFont',serif;
+  margin-bottom: 5%;
+  }
+#facebook{
+  width: 90%;
+  height: auto;
+  margin-bottom: 1%;
+  border-radius: 3%;
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+}
+
+#twitter{
+  width: 90%;
+  height: auto;
+  border-radius: 3%;
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+}
+#instagram{
+
+  height: auto;
+  border-radius: 3%;
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+}
+#stratMarket{
+  font-family: 'SecondaryFont',serif;
+  margin-bottom: 1%;
+  width: 100%;
+}
+#stratMarket>div{
+  margin: 5% 0 5% 0;
+  display:inline-block;
+}
+#market1{
+  width: 90%;
+  height: auto;
+  border-radius: 3%;
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+}
+#market2{
+  width: 90%;
+  height: auto;
+  border-radius: 3%;
+  -webkit-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+  box-shadow: 2px 3px 30px 2px rgba(0,0,0,0.29);
+}
+/* Animations */
+@keyframes shake-win {
+  0% {
+    transform:translate(-50%, -50%) rotate(0deg);
+  }
+  20% {
+    transform:translate(-50%, -50%) rotate(12deg);
+  }
+  40% {
+    transform:translate(-50%, -50%) rotate(-12deg);
+  }
+  60% {
+    transform:translate(-50%, -50%) rotate(12deg) scale(5);
+  }
+  80% {
+    transform:translate(-50%, -50%) rotate(-12deg);
+  }
+  100% {
+    transform:translate(-50%, -50%) rotate(12deg) scale(0.1);
+  }
+}
+.shake-win {
+  animation:shake-win 1.5s;
+}
 .win {
   visibility:hidden;
   opacity:0;
@@ -213,18 +336,34 @@ main #players-container {
   font-family:'LeagueSpartan',serif;
   transform:translate(-50%, -50%) scale(0);
 }
+.win-appear {
+  transition:0.3s;
+  visibility:visible;
+  opacity:1;
+}
+.fade-left {
+  transition:0.7s;
+  -webkit-transform:translateX(-500px);
+  transform:translateX(-500px);
+  opacity:0;
+}
+.fade-right {
+  transition:0.7s;
+  -webkit-transform:translateX(500px);
+  transform:translateX(500px);
+  opacity:0;
+}
 .arrow {
   position:absolute;
   left:0;
   top:0;
-  width:24px;
+  width:100%;
   cursor:pointer;
   opacity:0.3;
   transition:0.3s;
 }
 .arrow:hover {
   opacity:1;
-  transform:translateX(-10px);
 }
 .return{
   transition:0.7s;
@@ -232,77 +371,30 @@ main #players-container {
   transform:translateX(0);
   opacity:1;
 }
-#imgHeader{
-  width: 100%;
-  margin:0;
-  -webkit-box-shadow: 2px 3px 30px 2px white;
-  -moz-box-shadow: 2px 3px 30px 2px white;
-  box-shadow: 2px 3px 30px 2px white;
-}
 .arrow{
   margin-right: 40%;
   width: 1%;
 }
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
 
-#imgSituation1{
-  width: 60%;
-  margin-left: -30%;
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
 }
-#imgSituation2{
-  margin: 5% -10%;
-  width: 60%;
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
-section{
-  font-size: 180%;
-  text-align : center;
-  font-family: 'SecondaryFont',serif;
-}
-#firstSituation{
-  margin-bottom: 5%;
-}
-.align{
-  display: inline-block;
-}
-#lastParagraphe{
-  width: 50%;
-}
-footer>img{
-  width: 100%;
-}
-#imgSituation2{
-  margin-left: 0;
-}
-#lastParagraphe{
-  margin: 5% 5%;
-}
-@keyframes shake-win {
-  0% {
-    transform:translate(-50%, -50%) rotate(0deg);
-  }
-  20% {
-    transform:translate(-50%, -50%) rotate(12deg);
-  }
-  40% {
-    transform:translate(-50%, -50%) rotate(-12deg);
-  }
-  60% {
-    transform:translate(-50%, -50%) rotate(12deg) scale(5);
-  }
-  80% {
-    transform:translate(-50%, -50%) rotate(-12deg);
-  }
-  100% {
-    transform:translate(-50%, -50%) rotate(12deg) scale(0.1);
-  }
-}
-.shake-win {
-  animation:shake-win 1.5s;
-}
-.win-appear {
-  transition:0.3s;
-  visibility:visible;
-  opacity:1;
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4);
 }
 @media screen and (max-width:1280px) {
   #gallery table tr td {
